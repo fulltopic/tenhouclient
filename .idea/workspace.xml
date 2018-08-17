@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="479d62d6-a057-404f-bb22-45a6b15ecc76" name="Default Changelist" comment="" />
+    <list default="true" id="479d62d6-a057-404f-bb22-45a6b15ecc76" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,12 +32,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="1173" />
+          <entry key="Scala" value="1174" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scala" value="1173" />
+          <entry key="scala" value="1174" />
         </counts>
       </usages-collector>
     </session>
@@ -54,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/impl/MsgHelpImpl.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="197" column="46" selection-start-line="197" selection-start-column="46" selection-end-line="197" selection-end-column="46" />
+            <state relative-caret-position="685">
+              <caret line="194" selection-start-line="194" selection-end-line="194" />
               <folding>
                 <element signature="e#14#44#0" expanded="true" />
               </folding>
@@ -82,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/TenhouConsts.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -100,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/impl/MessageParser.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="11" column="64" lean-forward="true" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+              <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
               <folding>
                 <element signature="e#14#44#0" expanded="true" />
               </folding>
@@ -132,11 +134,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/client/TenhouClient.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="216" />
+              <caret line="216" selection-start-line="216" selection-end-line="216" />
               <folding>
                 <element signature="e#16#49#0" expanded="true" />
               </folding>
@@ -157,7 +159,6 @@
     <findStrings>
       <find>reach</find>
       <find>isMyReachIndicator</find>
-      <find>isStealAction</find>
       <find>isaka</find>
       <find>val ReinitReach: Int = 255</find>
       <find>InvalidAction</find>
@@ -165,7 +166,11 @@
       <find>mvalue</find>
       <find>isAka</find>
       <find>defaultreward</find>
+      <find>isStealAction</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -196,17 +201,19 @@
         <option value="$PROJECT_DIR$/src/main/java/utils/TenhouConsts.scala" />
         <option value="$PROJECT_DIR$/src/main/java/impl/MessageParser.scala" />
         <option value="$PROJECT_DIR$/src/main/java/impl/ActionParser.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/impl/MsgHelpImpl.scala" />
         <option value="$PROJECT_DIR$/src/main/java/impl/ImplConsts.scala" />
         <option value="$PROJECT_DIR$/src/main/java/impl/MessageParseUtilsImpl.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/impl/MsgHelpImpl.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="1920" />
-    <option name="height" value="1053" />
+    <option name="x" value="189" />
+    <option name="y" value="232" />
+    <option name="width" value="1144" />
+    <option name="height" value="472" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -296,7 +303,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534532420225" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534533214194" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -372,10 +379,11 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5978142" visible="true" weight="0.18055555" />
-      <window_info id="Structure" order="1" sideWeight="0.4021858" side_tool="true" visible="true" weight="0.18055555" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5982437" visible="true" weight="0.18055555" />
+      <window_info id="Structure" order="1" sideWeight="0.40175632" side_tool="true" visible="true" weight="0.18055555" />
       <window_info anchor="bottom" id="SBT Execute" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" weight="0.32896176" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="SBT Console" />
@@ -493,16 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/impl/MsgHelpImpl.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="197" column="46" selection-start-line="197" selection-start-column="46" selection-end-line="197" selection-end-column="46" />
-          <folding>
-            <element signature="e#14#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/impl/ActionParser.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1458">
@@ -516,14 +514,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/TenhouConsts.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/impl/MessageParser.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" column="64" lean-forward="true" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
           <folding>
             <element signature="e#14#44#0" expanded="true" />
           </folding>
@@ -560,9 +558,19 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/client/TenhouClient.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="216" />
+          <caret line="216" selection-start-line="216" selection-end-line="216" />
           <folding>
             <element signature="e#16#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/impl/MsgHelpImpl.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="194" selection-start-line="194" selection-end-line="194" />
+          <folding>
+            <element signature="e#14#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
