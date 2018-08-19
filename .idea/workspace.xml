@@ -2,197 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="479d62d6-a057-404f-bb22-45a6b15ecc76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/tenhouclient.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/MsgHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient$$anonfun$aborted$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient$$anonfun$auth$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient$$anonfun$gameEnd$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient$$anonfun$inAction$1$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient$$anonfun$inAction$1$$anonfun$applyOrElse$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient$$anonfun$inAction$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient$$anonfun$inGame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient$$anonfun$inReach$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient$$anonfun$init$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient$$anonfun$join$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient$$anonfun$receive$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient$$anonfun$retryInit$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/client/TenhouClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/config/ClientSettings$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/config/ClientSettings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/conn/TenhouTcpConnection$$anonfun$connected$1$$anonfun$applyOrElse$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/conn/TenhouTcpConnection$$anonfun$connected$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/conn/TenhouTcpConnection$$anonfun$receive$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/conn/TenhouTcpConnection$$anonfun$started$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/conn/TenhouTcpConnection$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/conn/TenhouTcpConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/conn/msgs/ActionRequest$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/conn/msgs/ActionRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/conn/msgs/ActionResponse$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/conn/msgs/ActionResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/conn/msgs/ConnMsgs$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/conn/msgs/ConnMsgs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/conn/msgs/ConnReady.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$19.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$21.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$22.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$23.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$24.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$25.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$clearTry$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$generateDropActions$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$getAgariReply$1$$anonfun$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$getAgariReply$1$$anonfun$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$getAgariReply$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$getDropTile$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$getDropTile$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$getRyuukyokuReply$1$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$getRyuukyokuReply$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$getStealTile$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$getStealTile$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$tenhouclient$impl$ActionParser$$canChow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser$$anonfun$tenhouclient$impl$ActionParser$$canChow$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ActionParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ImplConsts$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/ImplConsts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MdpInnerState$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MdpInnerState$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MdpInnerState$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MdpInnerState$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MdpInnerState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$acceptTile$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$dropTile$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$dropTileFromMsg$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$generateIND$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$get13OrphanTiles$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$get13OrphanTiles$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$get7PairTiles$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$get7PairTiles$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$getAgariReward$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$getAvailableActions$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$getAvailableActions$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$getLegalQAction$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$getMsgItems$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$getRonIndicator$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$getRyuReward$1$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$getRyuReward$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$getStealTiles$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$getStealTiles$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$getWhoFromN$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$is13Orphan$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$is13Orphan$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$is7Pairs$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$isAka$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$isStealResponse$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$tenhouclient$impl$MessageParseUtilsImpl$$try4GroupTiles$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$tenhouclient$impl$MessageParseUtilsImpl$$try4GroupTiles$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$tryChowReach$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$tryChowReach$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$tryChowReach$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$tryChowReach$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$tryChowReach$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$tryChowReach$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$$anonfun$tryChowReach$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParseUtilsImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$initStates$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$initStates$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$initStates$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseAnkan$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseAnkan$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseChow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseChow$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseGameEndMsg$1$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseGameEndMsg$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseGameEndMsg$2$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseGameEndMsg$2$$anonfun$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseGameEndMsg$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseInitMsg$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseKakan$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseKakan$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseKakan$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseMinKan$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseMinKan$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseMinKan$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parsePong$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parsePong$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parsePong$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseReinitMsg$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseReinitMsg$2$$anonfun$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseReinitMsg$2$$anonfun$apply$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseReinitMsg$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseReinitMsg$3$$anonfun$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseReinitMsg$3$$anonfun$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseReinitMsg$3$$anonfun$apply$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$parseReinitMsg$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser$$anonfun$requiresAction$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MessageParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/MsgHelpImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/mdp/TenhouArray$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/mdp/TenhouArray$$anonfun$toArray$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/mdp/TenhouArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/mdp/TenhouEncodableMdp$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/mdp/TenhouEncodableMdp$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/mdp/TenhouEncodableMdp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/mdp/TenhouIntegerActionSpace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/impl/mdp/TenhouObservationSpace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/utils/MessageParseUtils$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/utils/MessageParseUtils$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/utils/MessageParseUtils$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/utils/MessageParseUtils$$anonfun$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/utils/MessageParseUtils$$anonfun$dropTileFromMsg$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/utils/MessageParseUtils$$anonfun$getMsgItems$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/utils/MessageParseUtils$$anonfun$getRonIndicator$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/utils/MessageParseUtils$$anonfun$getWhoFromN$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/utils/MessageParseUtils$$anonfun$isSceneKey$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/utils/MessageParseUtils$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/utils/MessageParseUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/utils/TenhouConsts$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tenhouclient/utils/TenhouConsts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/RandomNN.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRandomNN$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRandomNN$delayedInit$body.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRandomNN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tenhouclient/config/ClientSettings.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tenhouclient/config/ClientSettings.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -214,25 +28,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="md" value="1" />
           <entry key="scala" value="44" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="Markdown" value="1" />
           <entry key="Scala" value="44" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="2032" />
+          <entry key="Markdown" value="937" />
+          <entry key="Scala" value="2571" />
           <entry key="XML" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scala" value="2032" />
+          <entry key="md" value="937" />
+          <entry key="scala" value="2571" />
           <entry key="xml" value="14" />
         </counts>
       </usages-collector>
@@ -243,20 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/impl/MessageParseUtilsImpl.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-210">
+            <state relative-caret-position="-480">
               <caret line="394" column="6" selection-start-line="394" selection-start-column="6" selection-end-line="394" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/impl/mdp/TenhouEncodableMdp.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="34" column="14" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="14" />
-              <folding>
-                <element signature="e#31#67#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -294,7 +100,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
+            <state relative-caret-position="639">
               <caret line="159" selection-start-line="159" selection-end-line="159" />
             </state>
           </provider>
@@ -304,19 +110,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/config/ClientSettings.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/impl/mdp/TenhouArray.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-              <folding>
-                <element signature="e#31#77#0" expanded="true" />
-              </folding>
+              <caret line="19" column="82" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -333,11 +127,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/client/TenhouClient.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="168" column="57" selection-start-line="168" selection-start-column="57" selection-end-line="168" selection-end-column="57" />
+            <state relative-caret-position="239">
+              <caret line="165" column="21" lean-forward="true" selection-start-line="165" selection-start-column="21" selection-end-line="165" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="198">
+                <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -413,6 +230,9 @@
         <option value="$PROJECT_DIR$/src/test/java/TestRandomNN.scala" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/tenhouclient/client/TenhouClient.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/tenhouclient/config/ClientSettings.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -435,6 +255,60 @@
               <item name="tenhouclient" type="b2602c69:ProjectViewProjectNode" />
               <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tenhouclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tenhouclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tenhouclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tenhouclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tenhouclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tenhouclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tenhouclient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="mdp" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -444,7 +318,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534640375855" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534640489528" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -526,16 +400,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.43578485" visible="true" weight="0.1826923" />
-      <window_info id="Structure" order="1" sideWeight="0.5642151" side_tool="true" visible="true" weight="0.1826923" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.87561375" visible="true" weight="0.1826923" />
+      <window_info id="Structure" order="1" sideWeight="0.12438625" side_tool="true" visible="true" weight="0.1826923" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32930845" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32930845" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.45444566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -694,24 +569,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/config/ClientSettings.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestRandomNN.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="159" selection-start-line="159" selection-end-line="159" />
         </state>
       </provider>
     </entry>
@@ -722,13 +583,6 @@
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/impl/MessageParseUtilsImpl.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="394" column="6" selection-start-line="394" selection-start-column="6" selection-end-line="394" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -751,8 +605,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/client/TenhouClient.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="168" column="57" selection-start-line="168" selection-start-column="57" selection-end-line="168" selection-end-column="57" />
+        <state relative-caret-position="239">
+          <caret line="165" column="21" lean-forward="true" selection-start-line="165" selection-start-column="21" selection-end-line="165" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/config/ClientSettings.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="82" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/impl/MessageParseUtilsImpl.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="394" column="6" selection-start-line="394" selection-start-column="6" selection-end-line="394" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="198">
+            <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
