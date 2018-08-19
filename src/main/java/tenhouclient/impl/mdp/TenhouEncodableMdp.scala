@@ -14,7 +14,7 @@ import org.json.JSONObject
 import tenhouclient.utils.MessageParseUtils.{StartConnection, ResetAction}
 import tenhouclient.impl.ImplConsts._
 import tenhouclient.client.TenhouClient
-import tenhouclient.impl.{MessageParseUtilsImpl, MsgHelpImpl}
+import tenhouclient.impl.MsgHelpImpl
 import tenhouclient.conn.msgs.{ActionRequest, ActionResponse}
 
 import scala.concurrent.{Await, Future}
@@ -36,8 +36,6 @@ class TenhouEncodableMdp(val workable: Boolean = true, val index: Int = 0) exten
     val system = ActorSystem("testSystem")
     val props = Props(new TenhouClient(index, new MsgHelpImpl()))
     client = system.actorOf(props, "tenhouClient" + index)
-
-    //    tenhouclient.client = system.actorOf(Props[TenhouClient], "tenhouClient")
     logger.info("Tenhou mdp created")
   }
 
@@ -81,9 +79,6 @@ class TenhouEncodableMdp(val workable: Boolean = true, val index: Int = 0) exten
 
 
   override def step(action: Integer): StepReply[TenhouArray] = {
-
-    //    logger.info("Step in mdp")
-    //    checkAction(lastActions, action)
     val request = generateRequest(action, lastTile)
     val rspFuture: Future[AnyRef] = Patterns.ask(client, request, timeout)
     val rspObj = Await.result(rspFuture, timeout.duration).asInstanceOf[ActionResponse]

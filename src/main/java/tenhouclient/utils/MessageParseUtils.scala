@@ -56,7 +56,6 @@ object MessageParseUtils{
   }
 
   def getLogMsg(s: String): String = {
-    //    "<%s />".format(s) + "\0\0"
     "<" + s + "/>\0"
   }
 
@@ -66,7 +65,6 @@ object MessageParseUtils{
 
   def getHeloMsg(userName: String): String = {
     getLogMsg("HELO name=\"" + userName + "\" tid=\"f0\" sx=\"M\" ")
-    //    "<HELO name=\"" + userName + "\" tid=\"f0\" sx=\"M\" />\0\0"
   }
 
   def getHeloReply(heloMsg: String): String = {
@@ -225,7 +223,6 @@ object MessageParseUtils{
   }
 
   def isMyReachIndicator(msg: String): Boolean = {
-    //    logger.debug("Check if my reach indicator " + msg)
     var isStep1: Boolean = false
 
     if (msg.contains("REACH")) {

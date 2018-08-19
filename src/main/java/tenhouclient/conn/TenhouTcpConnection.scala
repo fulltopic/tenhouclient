@@ -12,14 +12,12 @@ import tenhouclient.config.ClientSettings
 import tenhouclient.utils.MessageParseUtils
 
 class TenhouTcpConnection(remote: InetSocketAddress, listener: ActorRef, val index: Int = 0) extends Actor{
-//  val log = Logging(context.system, this)
   private[this] val log = Logger("TenhouTcpConnection" + index)
 
   val kaMsg = "<Z />"
   var kaNum: Int = 0
   val kaLimit: Int = ClientSettings.KALimit
 
-//  var connection: ActorRef = null
 
   def receive = {
     case msg: String if msg.contains(ConnMsgs.StartConnection) =>
@@ -53,10 +51,7 @@ class TenhouTcpConnection(remote: InetSocketAddress, listener: ActorRef, val ind
   def connected(connection : ActorRef): Receive = {
     case ConnMsgs.CloseConnection =>
       log.error("tcp connection closing, received close command")
-      //      println("tcp connection closing")
-      //      System.exit(0)
       connection ! Close
-    //      context.become(myClose(connection))
     case s: String =>
       connection ! Write(ByteString(s))
       log.info("sent to server " + s.replace("\0", " "))
@@ -76,9 +71,6 @@ class TenhouTcpConnection(remote: InetSocketAddress, listener: ActorRef, val ind
       val rawMsg = data.utf8String
       val msgs = rawMsg.split("\0")
       msgs.foreach(msg => processData(msg))
-    //          val msg = data.utf8String.replace("\0", " ")
-    //          log.info("Received msg " + msg)
-    //          processData(msg)
     case x: ConnectionClosed =>
       log.error("" + x.getClass())
       log.error("tcp connection aborted")
@@ -90,7 +82,6 @@ class TenhouTcpConnection(remote: InetSocketAddress, listener: ActorRef, val ind
 
 
   def processData(msg: String): Unit = {
-//    log.debug("Received data from server " + msg)
     msg match {
       case s if MessageParseUtils.isSceneKey(s) => listener ! s
       case _ => log.error("Received unrecoganizable message " + msg)

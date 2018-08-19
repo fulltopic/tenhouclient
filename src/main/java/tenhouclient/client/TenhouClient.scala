@@ -13,11 +13,8 @@ import tenhouclient.utils.MessageParseUtils
 import scala.concurrent.duration.Duration
 
 class TenhouClient(val index: Int = 0, val msgHelper: MsgHelper) extends Actor{
-  //  private[this] val log = Logging(context.system, this)
   private[this] val log = Logger("TenhouClient" + index)
 
-  //  val userName: String = TestUserName
-  //  val userName: String = TenhouUserName
   val userName: String = ClientSettings.UserName
   val serverIp: String = ClientSettings.ServerIP
   val port: Int = ClientSettings.ServerPort
@@ -150,9 +147,6 @@ class TenhouClient(val index: Int = 0, val msgHelper: MsgHelper) extends Actor{
       conn ! msgHelper.getByeMsg()
       scheduleGameEnd()
       context.become(gameEnd(mx))
-    //      slowDown()
-    //      tenhouclient.conn ! MessageParseUtils.CloseConnection
-    //      context.become(terminated(mx))
 
     case x: AnyRef => dummy("init " + x)
   }
@@ -231,7 +225,6 @@ class TenhouClient(val index: Int = 0, val msgHelper: MsgHelper) extends Actor{
         conn ! msgHelper.genDropAfterReach(msg)
       }
     case msg: String if MessageParseUtils.isGameMsg(msg) =>
-      //      log.info("Received message after reach " + msg)
       msgHelper.parseNoReplyMsg(msg)
     case msg: String if msg.equals(MessageParseUtils.ClosedConnection) =>
       tourEnd = true
@@ -253,10 +246,8 @@ class TenhouClient(val index: Int = 0, val msgHelper: MsgHelper) extends Actor{
             log.info("--------------------------_> In reach action")
             val msgs = msgHelper.genReachMsg(action).split("\\|").map(_.trim)
             reachDropTile = MessageParseUtils.dropTileFromMsg(msgs(0))
-            //            log.info(msgs.mkString(","))
             msgs.foreach(msg => {
               conn ! msg
-              //              slowDown()
             })
             context.become(inGame(mx))
           } else if (msgHelper.isStealResponse()) { //Decide not to steal
@@ -326,11 +317,9 @@ class TenhouClient(val index: Int = 0, val msgHelper: MsgHelper) extends Actor{
 
         conn ! MessageParseUtils.CloseConnection
         mdp ! endMsg
-        //        context.become(terminated(mx))
       }else {
         clearGameEnd()
         mdp ! endMsg
-        //        tenhouclient.conn ! msgHelper.getNextReadyMsg()
         context.become(init(mx))
       }
     //TODO: send reply and goto init or teminated

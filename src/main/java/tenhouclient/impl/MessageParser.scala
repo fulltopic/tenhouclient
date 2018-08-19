@@ -11,7 +11,6 @@ class MessageParser(innerState: MdpInnerState)  {
 
   val tileHead = Set[String]("<F", "<E", "<G", "<f", "<e", "<g")
   def requiresAction(msg: String): Boolean = {
-    //    logger.debug("-------------------> Requires action: " + msg)
     val iam = innerState.iam
     msg match {
       case s if s.startsWith("<T") => true
@@ -151,7 +150,6 @@ class MessageParser(innerState: MdpInnerState)  {
             who = (who + 1) % PlayerNum //don't care my N
           }
           val nMsg = getLogMsg("<N who=\"" + who + "\" m=\"" + m + "\" ").replace("\0", " ")
-          //          logger.debug("Parse nmsg " + nMsg)
           parseNMsg(nMsg)
         }
       }
@@ -207,10 +205,6 @@ class MessageParser(innerState: MdpInnerState)  {
         peers(0) = candidates(0)
         peers(1) = candidates(1)
     }
-
-    //    if (reinit) {
-    //      peers.foreach(peer => MessageParseUtils.acceptTile(innerState, peer))
-    //    }
 
     if (who == innerState.iam) {
       MessageParseUtilsImpl.acceptTile(innerState, chowTile)

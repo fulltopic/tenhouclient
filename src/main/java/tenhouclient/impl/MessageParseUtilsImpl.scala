@@ -11,11 +11,6 @@ object MessageParseUtilsImpl {
   private val logger = Logger("MessageParseUtilsImpl")
 
 
-
-//
-//  val DefaultReward: Int = 0
-
-
   val jsonActionKey = "actions"
   val jsonTileKey = "tile"
   private[this] val keys = Set[String]("TAIKYOKU", " INIT", "T", "D", "U", "E", "V", "F", "W", "G", "N", "RYUUKYOKU", "AGARI", "REACH", "DORA")
@@ -29,14 +24,6 @@ object MessageParseUtilsImpl {
   val tileKeyPattern = "[d, u, e, v, f, w, t, g, D,U,E,V,F,W,T,G][0-9]+" //efgd for drop, uvwt for accept
   val ronActionFlags = Set[Int](8, 9, 10, 11, 12, 13, 15, 16)
 
-
-
-//  val StartConnection = "StartConnection"
-//  val CloseConnection = "CloseConnection"
-//  val ClosedConnection = "ClosedConnection"
-//  val SendGameEndReply = "SendGameEndReply"
-  //  val AbortedConnection = "AbortedConnection"
-//  val ResetAction: Int = -1
 
 
   def updateBoard(tile: Int, innerState: MdpInnerState): Unit = {
@@ -362,17 +349,13 @@ object MessageParseUtilsImpl {
       case _ =>
         tryChowReach(nums, hasPair) ++ tryPongReach(nums, hasPair) ++ tryPair(nums, hasPair)
     }
-    //    Set.empty[Int]
   }
 
   private def get4GroupTiles(nums: Array[Int]): Set[Int] = {
     try4GroupTiles(nums, false)
   }
 
-  //  def getReachDropTile(state: Array[Double]): Set[Int] = {
   def getReachDropTile(state: INDArray): Set[Int] = {
-
-    //    val state = innerState.state
     val tileNums: Array[Int] = (for (i <- 0 until TileNum) yield state.getDouble(i).toInt & ImplConsts.ExtraValueFlag).toArray
     var reachTiles = Set.empty[Int]
 
@@ -401,7 +384,6 @@ object MessageParseUtilsImpl {
       logger.debug("----------------> Reach action")
       //TODO: This is to test reach
       actions = List[Int](ImplConsts.REACHWoAccept)
-      //      actions = List[Int](REACHWoAccept, NOOPWoAccept)
     }else if(lastState.getDouble(ImplConsts.PeerReachIndex) == ReachStep1) {
       actions = getReachDropTile(lastState).toList
     }
@@ -429,8 +411,6 @@ object MessageParseUtilsImpl {
     logger.debug("Available actions: ", actions.mkString(","))
 
     actions
-
-    //    actions(actionRandom.nextInt(actions.length))
   }
 
   def getLegalQAction(rawState: INDArray, qs: INDArray): org.nd4j.linalg.primitives.Pair[java.lang.Double, Integer] = {

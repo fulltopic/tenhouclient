@@ -6,7 +6,6 @@ import scala.util.Random
 
 class RandomNN {
   private val mdp = new TenhouEncodableMdp(true)
-  private var done: Boolean = false
   private val actionRandom = new Random(53)
   private var lastState: INDArray = null
 

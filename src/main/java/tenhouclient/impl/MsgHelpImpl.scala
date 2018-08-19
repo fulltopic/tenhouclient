@@ -2,7 +2,6 @@ package tenhouclient.impl
 
 import akka.event.slf4j.Logger
 import tenhouclient.conn.msgs.ActionResponse
-import tenhouclient.utils.TenhouConsts.TileNum
 import tenhouclient.utils.MessageParseUtils
 import tenhouclient.client.MsgHelper
 
@@ -20,9 +19,6 @@ class MsgHelpImpl extends MsgHelper{
 
   def isInReachAction(): Boolean = state.inReachAction
 
-  //  private def turnOnReachAction(): Unit = {
-  //    state.inReachAction = true
-  //  }
   private def turnOffReachAction(): Unit = {
     state.inReachAction = false
     state.decideReach = false

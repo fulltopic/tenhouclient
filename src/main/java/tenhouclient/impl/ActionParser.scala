@@ -16,17 +16,6 @@ class ActionParser(innerState: MdpInnerState) {
 
   type ReplyType = StepReply[INDArray]
 
-//  val pongActionFlag: Int = 1
-//  val chowActionFlag: Int = 4
-//  val kanActionFlag: Int = 2
-//  val reachActionFlag: Int = 32
-//  val ankanActionFlag: Int = 3
-  //  val kaKanActionFlag: Int = 16
-
-
-
-
-
   def getDropTile(actionTile: Int): Int = {
     val rawState = innerState.rawState
 
@@ -84,14 +73,6 @@ class ActionParser(innerState: MdpInnerState) {
 
     actions
   }
-
-  //  val tryValue: Double = 0.5
-
-  //  private def genTState(msg: String): Unit = {
-  //    if (msg.contains(" t=\"" + reachActionFlag + "\"")){
-  //      innerState.state(PeerReachIndex) = tryValue
-  //    }
-  //  }
 
   def genAbortResponse(): ActionResponse = {
     val reply = new StepReply[INDArray](MessageParseUtilsImpl.generateIND(innerState), DefaultReward, true, null)
@@ -290,9 +271,6 @@ class ActionParser(innerState: MdpInnerState) {
     val tiles = for (i <- candidate until candidate + NumPerTile if rawState(i) > 0) yield  i
 
     val pongTiles = Array[Int](tiles(0), tiles(1))
-    //    for (i <- 0 until 2) {
-    //      pongTiles(i) = tiles(i)
-    //    }
 
     if(tiles.length > 2) {
       if (MessageParseUtilsImpl.isAka(tiles(2))) {
@@ -301,7 +279,6 @@ class ActionParser(innerState: MdpInnerState) {
       }
     }
 
-    //    val dropTiles = pongTiles.filter(t => t != tile)
     logger.debug(innerState.state.mkString(", "))
     logger.debug(innerState.rawState.mkString(", "))
     logger.debug("tiles: " + tiles.mkString(", "))
@@ -317,16 +294,9 @@ class ActionParser(innerState: MdpInnerState) {
 
   //TODO: Make it function in function
   private def canChow(candidate: Int, actionTile: Int): Boolean = {
-    //    var rc: Boolean = true
-
-    //    (0 until 3).count(i => {
-    //      (innerState.state(i + candidate).toInt & ExtraValueFlag) > 0 || innerState.state(i + candidate).toInt == actionTile
-    //    }) >= 2
-
     (0 until 3).filter(i => {(i + candidate) != actionTile}).count(i => {
       ((innerState.state(i + candidate).toInt & ExtraValueFlag) > 0) &&
         ((i + candidate) / NumPerSort == actionTile / NumPerSort)}) >= 2
-
   }
 
 
