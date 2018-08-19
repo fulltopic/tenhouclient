@@ -157,7 +157,6 @@
                     <launchers>
                         <launcher>
                             <id>supervised</id>
-                            <!--<mainClass>rl.dqn.supervised.nn.SupervisedTrainNoAccept</mainClass>-->
                         </launcher>
                     </launchers>
                 </configuration>

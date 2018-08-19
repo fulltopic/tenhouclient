@@ -16,7 +16,7 @@ else
 fi
 
 # If you want to allow non-ASCII filenames set this variable to true.
-allownonascii=$(git config --bool hooks.allownonascii)
+allownonascii=$(git tenhouclient.client.config --bool hooks.allownonascii)
 
 # Redirect output to stderr.
 exec 1>&2
@@ -40,7 +40,7 @@ To be portable it is advisable to rename the file.
 
 If you know what you are doing you can disable this check using:
 
-  git config hooks.allownonascii true
+  git tenhouclient.client.config hooks.allownonascii true
 EOF
 	exit 1
 fi

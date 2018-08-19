@@ -43,11 +43,11 @@ if [ -z "$refname" -o -z "$oldrev" -o -z "$newrev" ]; then
 fi
 
 # --- Config
-allowunannotated=$(git config --bool hooks.allowunannotated)
-allowdeletebranch=$(git config --bool hooks.allowdeletebranch)
-denycreatebranch=$(git config --bool hooks.denycreatebranch)
-allowdeletetag=$(git config --bool hooks.allowdeletetag)
-allowmodifytag=$(git config --bool hooks.allowmodifytag)
+allowunannotated=$(git tenhouclient.client.config --bool hooks.allowunannotated)
+allowdeletebranch=$(git tenhouclient.client.config --bool hooks.allowdeletebranch)
+denycreatebranch=$(git tenhouclient.client.config --bool hooks.denycreatebranch)
+allowdeletetag=$(git tenhouclient.client.config --bool hooks.allowdeletetag)
+allowmodifytag=$(git tenhouclient.client.config --bool hooks.allowmodifytag)
 
 # check for no description
 projectdesc=$(sed -e '1q' "$GIT_DIR/description")
