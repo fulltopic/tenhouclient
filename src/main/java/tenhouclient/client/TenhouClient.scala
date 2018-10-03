@@ -9,10 +9,11 @@ import tenhouclient.conn.TenhouTcpConnection
 import tenhouclient.conn.msgs.{ActionRequest, ConnMsgs, ConnReady}
 import tenhouclient.config.ClientSettings
 import tenhouclient.utils.MessageParseUtils
+import tenhouclient.conn.msgs.ConnMsgs._
 
 import scala.concurrent.duration.Duration
 
-class TenhouClient(val index: Int = 0, val msgHelper: MsgHelper) extends Actor{
+class TenhouClient(val index: Int = 0, val msgHelper: MsgHelper, val isPrivateLobby: Boolean = false) extends Actor{
   private[this] val log = Logger("TenhouClient" + index)
 
   val userName: String = ClientSettings.UserName
@@ -60,7 +61,11 @@ class TenhouClient(val index: Int = 0, val msgHelper: MsgHelper) extends Actor{
 
       conn ! msgHelper.getHeloMsg(userName)
       log.info("Sent hello to server")
-      context.become(auth(sender()))
+      if (isPrivateLobby) {
+        context.become(authLobby(sender()))
+      }else {
+        context.become(auth(sender()))
+      }
     }
   }
 
@@ -68,7 +73,7 @@ class TenhouClient(val index: Int = 0, val msgHelper: MsgHelper) extends Actor{
     case msg: String if msg.equals(ConnMsgs.StartConnection) =>
       conn ! msg
       mdp = sender()
-      mdp ! ConnMsgs.StartConnection
+      mdp ! StartConnectionRsp
     case m: ConnReady =>
       connReady = true
       log.info("Connection ready")
@@ -106,6 +111,30 @@ class TenhouClient(val index: Int = 0, val msgHelper: MsgHelper) extends Actor{
     case x: Any => dummy("auth: " + x)
   }
 
+  def authLobby(mx: ActorRef): Receive = {
+    case msg: String if msg.contains("HELO") =>
+      conn ! msgHelper.getHeloReply(msg)
+      slowDown()
+      conn ! MessageParseUtils.getLogMsg("PXR V=\"1\"")
+    case msg: String if msg.contains("LN") =>
+      conn ! MessageParseUtils.getLogMsg("CHAT text=\"/lobby 3581\"")
+      slowDown()
+      conn ! MessageParseUtils.getLogMsg("PXR v=\"-1\"")
+      slowDown()
+      conn ! MessageParseUtils.getLogMsg("JOIN t=\"3581,1\"")
+      context.become(join(mx))
+    case msg: String if msg.contains("SAIKAI") =>
+      context.become(inGame(mx))
+    case msg: String if msg.equals(MessageParseUtils.ClosedConnection) =>
+      log.error("Connection closed in auth")
+      gameEnd = true
+      tourEnd = true
+      mdp ! msgHelper.genAbortResponse()
+      clearGameEnd()
+      context.become(receive)
+    case x: Any => dummy("authlobby: " + x)
+  }
+
   var lnCount: Int = 0
   def join(mx: ActorRef): Receive = {
     case msg: String if msg.contains("LN") =>
@@ -116,6 +145,13 @@ class TenhouClient(val index: Int = 0, val msgHelper: MsgHelper) extends Actor{
         log.error("-----------------------> Failed in multiple LN try")
 
         conn ! ConnMsgs.CloseConnection
+        //Make clients waiting for server to clear up the previous invalid lobby
+        //And prevent synchronization of retry
+        slowDown()
+        slowDown()
+        slowDown()
+        slowDown()
+        slowDown()
         context.become(retryInit(mx))
       }
       conn ! msgHelper.getKAMsg()
@@ -316,20 +352,27 @@ class TenhouClient(val index: Int = 0, val msgHelper: MsgHelper) extends Actor{
         clearGameEnd()
 
         conn ! MessageParseUtils.CloseConnection
-        mdp ! endMsg
+//        mdp ! endMsg
       }else {
+        val endMsg = msgHelper.genGameEndReply(gameReward, tourEnd)
         clearGameEnd()
         mdp ! endMsg
         context.become(init(mx))
       }
     //TODO: send reply and goto init or teminated
     case msg: String if msg.equals(MessageParseUtils.ClosedConnection) =>
-      log.info("Connection closed ")
+      tourEnd = true
+      val endMsg = msgHelper.genGameEndReply(gameReward, tourEnd)
+      clearGameEnd()
+      mdp ! endMsg
+
+      log.info("Connection closed in gameEnd ")
       context.become(receive)
     case msg: String if msg.equals(MessageParseUtils.StartConnection) =>  //received in advance
+      log.error("Should not happen, start connection received in advance")
       conn ! msg
       mdp = sender()
-      mdp ! MessageParseUtils.StartConnection
+      mdp ! StartConnectionRsp
     case x: Any => dummy("gameEnd " + x)
   }
 

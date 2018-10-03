@@ -7,6 +7,8 @@ import tenhouclient.utils.MessageParseUtils
 import MdpInnerState._
 import ImplConsts._
 
+import scala.util.Random
+
 object MessageParseUtilsImpl {
   private val logger = Logger("MessageParseUtilsImpl")
 
@@ -355,6 +357,7 @@ object MessageParseUtilsImpl {
     try4GroupTiles(nums, false)
   }
 
+  //TODO: Rewrite in dynamic programming
   def getReachDropTile(state: INDArray): Set[Int] = {
     val tileNums: Array[Int] = (for (i <- 0 until TileNum) yield state.getDouble(i).toInt & ImplConsts.ExtraValueFlag).toArray
     var reachTiles = Set.empty[Int]
@@ -373,44 +376,6 @@ object MessageParseUtilsImpl {
     }
     logger.debug("Reach drop tiles " + reachTiles.mkString(", "))
     reachTiles
-  }
-
-  def getAvailableActions(lastState: INDArray): List[Int] = {
-    logger.debug("lastState" + lastState)
-    var actions = List.empty[Int]
-
-    // Reach
-    if (lastState.getDouble(ImplConsts.PeerReachIndex) > math.floor(lastState.getDouble(ImplConsts.PeerReachIndex))) {
-      logger.debug("----------------> Reach action")
-      //TODO: This is to test reach
-      actions = List[Int](ImplConsts.REACHWoAccept)
-    }else if(lastState.getDouble(ImplConsts.PeerReachIndex) == ReachStep1) {
-      actions = getReachDropTile(lastState).toList
-    }
-    else if(getStealTiles(lastState).length > 0) { // Steal
-      val candidates = getStealTiles(lastState)
-      logger.debug("----------------> Get steal tiles " + candidates.mkString(", "))
-
-      val stealTile = candidates.head
-      val delta = lastState.getDouble(stealTile) - math.floor(lastState.getDouble(stealTile))
-      logger.debug("----------------> Get steal tile and delta " + stealTile + ", " + delta)
-      if (delta == pongValue) {
-        actions = actions :+ ImplConsts.PongWoAccept
-      } else if (delta == chowValue) {
-        actions = actions :+ ImplConsts.ChowWoAccept
-      }else if (delta == chowValue + pongValue) {
-        actions = actions :+ ImplConsts.PongWoAccept
-        actions = actions :+ ImplConsts.ChowWoAccept
-      }
-      actions = actions :+ ImplConsts.NOOPWoAccept
-    }else { //Drop
-      logger.debug("----------------------> Drop actions")
-      actions = (for (i <- 0 until TileNum if (lastState.getDouble(i).toInt & ImplConsts.ExtraValueFlag) > 0) yield i).toList
-    }
-
-    logger.debug("Available actions: ", actions.mkString(","))
-
-    actions
   }
 
   def getLegalQAction(rawState: INDArray, qs: INDArray): org.nd4j.linalg.primitives.Pair[java.lang.Double, Integer] = {
@@ -498,6 +463,64 @@ object MessageParseUtilsImpl {
 
   def isAka(tile: Int): Boolean = {
     ImplConsts.AkaValues.getOrElse(tile, 0) > 0
+  }
+
+//  import ImplConsts.PeerReachIndex
+  def getAvailableActions(lastState: INDArray): List[Int] = {
+    //    logger.debug("lastState" + lastState)
+    var actions = List.empty[Int]
+
+    // Reach
+    if (lastState.getDouble(ImplConsts.PeerReachIndex) > math.floor(lastState.getDouble(ImplConsts.PeerReachIndex))) {
+      logger.debug("----------------> Reach action")
+      //TODO: This is to test reach
+      actions = List[Int](ImplConsts.REACHWoAccept)
+      //      actions = List[Int](REACHWoAccept, NOOPWoAccept)
+    }else if(lastState.getDouble(ImplConsts.PeerReachIndex) == ReachStep1) {
+      actions = getReachDropTile(lastState).toList
+    }
+    else if(getStealTiles(lastState).length > 0) { // Steal
+      val candidates = getStealTiles(lastState)
+      logger.debug("----------------> Get steal tiles " + candidates.mkString(", "))
+
+      val stealTile = candidates.head
+      val delta = lastState.getDouble(stealTile) - math.floor(lastState.getDouble(stealTile))
+      logger.debug("----------------> Get steal tile and delta " + stealTile + ", " + delta)
+      if (delta == ImplConsts.pongValue) {
+        actions = actions :+ ImplConsts.PongWoAccept
+      } else if (delta == ImplConsts.chowValue) {
+        actions = actions :+ ImplConsts.ChowWoAccept
+      }else if (delta == ImplConsts.chowValue + ImplConsts.pongValue) {
+        actions = actions :+ ImplConsts.PongWoAccept
+        actions = actions :+ ImplConsts.ChowWoAccept
+      }
+      actions = actions :+ ImplConsts.NOOPWoAccept
+    }else { //Drop
+      logger.debug("----------------------> Drop actions")
+      actions = (for (i <- 0 until TileNum if (lastState.getDouble(i).toInt & ImplConsts.ExtraValueFlag) > 0) yield i).toList
+    }
+
+    logger.debug("Available actions: ", actions.mkString(","))
+
+    actions
+
+    //    actions(actionRandom.nextInt(actions.length))
+  }
+
+  import collection.JavaConversions._
+  def getAvailableActionJavaSet(input: INDArray): java.util.HashSet[Integer] = {
+    val actionList = getAvailableActions(input).map(d => new Integer(d))
+    new java.util.HashSet[Integer](actionList)
+  }
+
+  val actionRandom: Random = new Random(177)
+  def getRandomAction(rawState: INDArray, qs: INDArray): org.nd4j.linalg.primitives.Pair[java.lang.Double, Integer] = {
+    val legalActions = getAvailableActions(rawState)
+    val index = actionRandom.nextInt(legalActions.size)
+    val action = legalActions(index)
+    val q = qs.getDouble(index)
+
+    new org.nd4j.linalg.primitives.Pair(q, action)
   }
 
 }

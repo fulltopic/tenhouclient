@@ -109,7 +109,7 @@
         </dependency>
         <dependency>
             <groupId>com.typesafe.scala-logging</groupId>
-            <artifactId>scala-logging</artifactId>
+            <artifactId>scala-logging_2.12</artifactId>
             <version>3.9.0</version>
         </dependency>
     </dependencies>
@@ -159,6 +159,14 @@
                             <id>supervised</id>
                         </launcher>
                     </launchers>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.0</source>
+                    <target>1.0</target>
                 </configuration>
             </plugin>
         </plugins>
