@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="479d62d6-a057-404f-bb22-45a6b15ecc76" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tenhouclient/client/TenhouClient.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tenhouclient/client/TenhouClient.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tenhouclient/conn/msgs/ConnMsgs.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tenhouclient/conn/msgs/ConnMsgs.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tenhouclient/impl/MessageParseUtilsImpl.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tenhouclient/impl/MessageParseUtilsImpl.scala" afterDir="false" />
-    </list>
+    <list default="true" id="479d62d6-a057-404f-bb22-45a6b15ecc76" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,28 +26,28 @@
         <counts>
           <entry key="md" value="1" />
           <entry key="scala" value="60" />
-          <entry key="xml" value="3" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="Scala" value="60" />
-          <entry key="XML" value="3" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="937" />
           <entry key="Scala" value="2922" />
-          <entry key="XML" value="95" />
+          <entry key="XML" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="937" />
           <entry key="scala" value="2922" />
-          <entry key="xml" value="95" />
+          <entry key="xml" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -86,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/impl/MessageParseUtilsImpl.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
-              <caret line="492" column="53" lean-forward="true" selection-start-line="492" selection-start-column="53" selection-end-line="492" selection-end-column="53" />
+              <caret line="492" column="53" selection-start-line="492" selection-start-column="53" selection-end-line="492" selection-end-column="53" />
               <folding>
                 <element signature="e#27#57#0" expanded="true" />
               </folding>
@@ -94,14 +88,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/client/TenhouClient.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-846">
-              <caret line="148" column="34" lean-forward="true" selection-start-line="148" selection-start-column="34" selection-end-line="148" selection-end-column="34" />
+            <state relative-caret-position="-306">
+              <caret line="148" column="34" selection-start-line="148" selection-start-column="34" selection-end-line="148" selection-end-column="34" />
               <folding>
                 <element signature="e#29#62#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="103" column="29" lean-forward="true" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -187,10 +190,10 @@
         <option value="$PROJECT_DIR$/src/main/java/tenhouclient/impl/mdp/TenhouEncodableMdp.scala" />
         <option value="$PROJECT_DIR$/src/main/java/tenhouclient/utils/MessageParseUtils.scala" />
         <option value="$PROJECT_DIR$/src/main/java/tenhouclient/conn/TenhouTcpConnection.scala" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/tenhouclient/impl/MessageParseUtilsImpl.scala" />
         <option value="$PROJECT_DIR$/src/main/java/tenhouclient/conn/msgs/ConnMsgs.scala" />
         <option value="$PROJECT_DIR$/src/main/java/tenhouclient/client/TenhouClient.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -304,17 +307,6 @@
               <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tenhouclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tenhouclient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tenhouclient" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -408,9 +400,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1280" height="1024" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46825397" visible="true" weight="0.19480519" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.53174603" side_tool="true" visible="true" weight="0.19480519" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.46825397" visible="true" weight="0.19480519" />
+      <window_info id="Structure" order="1" sideWeight="0.53174603" side_tool="true" visible="true" weight="0.19480519" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -563,13 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/impl/MsgHelpImpl.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -618,7 +604,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/impl/MessageParseUtilsImpl.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="492" column="53" lean-forward="true" selection-start-line="492" selection-start-column="53" selection-end-line="492" selection-end-column="53" />
+          <caret line="492" column="53" selection-start-line="492" selection-start-column="53" selection-end-line="492" selection-end-column="53" />
           <folding>
             <element signature="e#27#57#0" expanded="true" />
           </folding>
@@ -637,11 +623,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tenhouclient/client/TenhouClient.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-846">
-          <caret line="148" column="34" lean-forward="true" selection-start-line="148" selection-start-column="34" selection-end-line="148" selection-end-column="34" />
+        <state relative-caret-position="-306">
+          <caret line="148" column="34" selection-start-line="148" selection-start-column="34" selection-end-line="148" selection-end-column="34" />
           <folding>
             <element signature="e#29#62#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="103" column="29" lean-forward="true" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
         </state>
       </provider>
     </entry>
