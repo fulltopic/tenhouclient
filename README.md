@@ -9,7 +9,7 @@ In this case, please just raise issue with log file
 
 ## Configuration
 * Update tenhouclient/config/ClientSettings and in according to your environment
-* Update resources/logback.xml and put into the $CLASSPAH
+* Update ./logback.xml and put into the $CLASSPAH
 
 ## Extension
 If customized version wanted, please replace tenhouclient/impl/ with your own version

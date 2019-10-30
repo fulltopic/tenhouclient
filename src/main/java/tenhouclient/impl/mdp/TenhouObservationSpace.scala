@@ -11,7 +11,7 @@ class TenhouObservationSpace[O] extends ObservationSpace[O] {
 
   override def getShape(): Array[Int] = Array[Int](PeerStateLen)
 
-  override def getLow(): INDArray = Nd4j.zeros(1, PeerStateLen)
+  override def getLow(): INDArray = Nd4j.zeros(1.toLong, PeerStateLen)
 
   override def getHigh: INDArray = Nd4j.ones(1, PeerStateLen).muli(Int.MaxValue)
 }

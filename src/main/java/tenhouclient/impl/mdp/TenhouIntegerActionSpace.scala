@@ -19,7 +19,7 @@ class TenhouIntegerActionSpace extends DiscreteSpace(0){
 
   override def encode(action: Integer): INDArray = {
     val actVec = Nd4j.zeros(getSize)
-    actVec.putScalar(action, 1)
+    actVec.putScalar(action.toLong, 1)
 
     actVec
   }

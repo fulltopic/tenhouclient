@@ -8,7 +8,7 @@ class TenhouArray(val data: INDArray) extends Encodable {
   override def toArray: Array[Double] = {
     val array = Array.fill[Double](PeerStateLen)(0)
     for (i <- array.indices) {
-      array(i) = data.getDouble(i)
+      array(i) = data.getDouble(i.toLong)
     }
 
     array

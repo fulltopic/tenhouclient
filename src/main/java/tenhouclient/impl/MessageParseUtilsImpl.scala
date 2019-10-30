@@ -194,7 +194,7 @@ object MessageParseUtilsImpl {
   }
 
   private def getStealTiles(lastState: INDArray): Array[Int] = {
-    (for (i <- 0 until TileNum if math.floor(lastState.getDouble(i)) < lastState.getDouble(i)) yield  i).toArray
+    (for (i <- 0 until TileNum if math.floor(lastState.getDouble(i.toLong)) < lastState.getDouble(i.toLong)) yield  i).toArray
   }
 
   val orphanTiles = Array[Int](0, 8, 9, 17, 18, 26, 27, 28, 29, 30, 31, 32, 33).toSet
@@ -359,7 +359,7 @@ object MessageParseUtilsImpl {
 
   //TODO: Rewrite in dynamic programming
   def getReachDropTile(state: INDArray): Set[Int] = {
-    val tileNums: Array[Int] = (for (i <- 0 until TileNum) yield state.getDouble(i).toInt & ImplConsts.ExtraValueFlag).toArray
+    val tileNums: Array[Int] = (for (i <- 0 until TileNum) yield state.getDouble(i.toLong).toInt & ImplConsts.ExtraValueFlag).toArray
     var reachTiles = Set.empty[Int]
 
     logger.debug("----------------------> " + tileNums.mkString(", "))
@@ -385,7 +385,7 @@ object MessageParseUtilsImpl {
 
     for (i <- 0 until ImplConsts.ActionLenWoAccept) {
       if (legalActions.contains(i)) {
-        val q = qs.getDouble(i)
+        val q = qs.getDouble(i.toLong)
         if (q > maxQ) {
           maxQ = q
           action = i
@@ -471,12 +471,12 @@ object MessageParseUtilsImpl {
     var actions = List.empty[Int]
 
     // Reach
-    if (lastState.getDouble(ImplConsts.PeerReachIndex) > math.floor(lastState.getDouble(ImplConsts.PeerReachIndex))) {
+    if (lastState.getDouble(ImplConsts.PeerReachIndex.toLong) > math.floor(lastState.getDouble(ImplConsts.PeerReachIndex.toLong))) {
       logger.debug("----------------> Reach action")
       //TODO: This is to test reach
       actions = List[Int](ImplConsts.REACHWoAccept)
       //      actions = List[Int](REACHWoAccept, NOOPWoAccept)
-    }else if(lastState.getDouble(ImplConsts.PeerReachIndex) == ReachStep1) {
+    }else if(lastState.getDouble(ImplConsts.PeerReachIndex.toLong) == ReachStep1) {
       actions = getReachDropTile(lastState).toList
     }
     else if(getStealTiles(lastState).length > 0) { // Steal
@@ -484,7 +484,7 @@ object MessageParseUtilsImpl {
       logger.debug("----------------> Get steal tiles " + candidates.mkString(", "))
 
       val stealTile = candidates.head
-      val delta = lastState.getDouble(stealTile) - math.floor(lastState.getDouble(stealTile))
+      val delta = lastState.getDouble(stealTile.toLong) - math.floor(lastState.getDouble(stealTile.toLong))
       logger.debug("----------------> Get steal tile and delta " + stealTile + ", " + delta)
       if (delta == ImplConsts.pongValue) {
         actions = actions :+ ImplConsts.PongWoAccept
@@ -497,7 +497,7 @@ object MessageParseUtilsImpl {
       actions = actions :+ ImplConsts.NOOPWoAccept
     }else { //Drop
       logger.debug("----------------------> Drop actions")
-      actions = (for (i <- 0 until TileNum if (lastState.getDouble(i).toInt & ImplConsts.ExtraValueFlag) > 0) yield i).toList
+      actions = (for (i <- 0 until TileNum if (lastState.getDouble(i.toLong).toInt & ImplConsts.ExtraValueFlag) > 0) yield i).toList
     }
 
     logger.debug("Available actions: ", actions.mkString(","))
@@ -518,7 +518,7 @@ object MessageParseUtilsImpl {
     val legalActions = getAvailableActions(rawState)
     val index = actionRandom.nextInt(legalActions.size)
     val action = legalActions(index)
-    val q = qs.getDouble(index)
+    val q = qs.getDouble(index.toLong)
 
     new org.nd4j.linalg.primitives.Pair(q, action)
   }
