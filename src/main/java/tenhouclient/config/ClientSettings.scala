@@ -3,7 +3,8 @@ package tenhouclient.config
 object ClientSettings {
   val KALimit: Int = 5 //Reconnection after #KALimit of KA received while no message sent from client
 
-  val UserName: String = "NoName"
+//  val UserName: String = "NoName"
+  val UserName:String = "ID0CAF3DF9-HBH66B8c"
 
   val ServerIP: String = "133.242.10.78"
 

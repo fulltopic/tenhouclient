@@ -9,6 +9,7 @@
     <version>1.0.0-beta5</version>
 
     <properties>
+        <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
@@ -18,7 +19,7 @@
         <rl4j.version>1.0.0-beta5</rl4j.version>
         <datavec.version>1.0.0-beta5</datavec.version>
 
-        <!--        <scala.version>2.11.12</scala.version>-->
+        <scala.version>2.11.12</scala.version>
         <scala.binary.version>2.11</scala.binary.version>
         <logback.version>1.1.7</logback.version>
 
@@ -90,16 +91,16 @@
 <!--            <artifactId>scala-compiler</artifactId>-->
 <!--            <version>${scala.version}</version>-->
 <!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.scala-lang</groupId>-->
-<!--            <artifactId>scala-library</artifactId>-->
-<!--            <version>${scala.version}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-actor -->
         <dependency>
             <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-actor_2.12</artifactId>
-            <version>2.5.1</version>
+            <artifactId>akka-actor_2.11</artifactId>
+            <version>2.5.23</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
         <dependency>
@@ -115,9 +116,10 @@
         </dependency>
         <dependency>
             <groupId>com.typesafe.scala-logging</groupId>
-            <artifactId>scala-logging_2.12</artifactId>
+            <artifactId>scala-logging_2.11</artifactId>
             <version>3.9.0</version>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -134,7 +136,7 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.7.0</version>
+                    <version>3.5.1</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>
@@ -162,7 +164,10 @@
                 <configuration>
                     <launchers>
                         <launcher>
-                            <id>supervised</id>
+                            <id>testclient</id>
+                            <mainClass>
+                                tenhouclient.test.TestRandomNN
+                            </mainClass>
                         </launcher>
                     </launchers>
                 </configuration>
@@ -179,9 +184,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+<!--                <configuration>-->
+<!--                    <source>1.0</source>-->
+<!--                    <target>1.0</target>-->
+<!--                </configuration>-->
                 <configuration>
-                    <source>1.0</source>
-                    <target>1.0</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                 </configuration>
             </plugin>
         </plugins>

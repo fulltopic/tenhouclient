@@ -1,0 +1,331 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< tenhouclient-dp4j:tenhouclient >-------------------
+[INFO] Building tenhouclient 1.0.0-beta5
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ tenhouclient ---
+[INFO] tenhouclient-dp4j:tenhouclient:jar:1.0.0-beta5
+[INFO] +- junit:junit:jar:4.11:test
+[INFO] |  \- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO] +- org.nd4j:nd4j-native-platform:jar:1.0.0-beta5:compile
+[INFO] |  +- org.bytedeco:openblas-platform:jar:0.3.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:openblas:jar:0.3.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:openblas:jar:android-arm:0.3.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:openblas:jar:android-arm64:0.3.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:openblas:jar:android-x86:0.3.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:openblas:jar:android-x86_64:0.3.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:openblas:jar:ios-arm64:0.3.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:openblas:jar:ios-x86_64:0.3.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:openblas:jar:linux-x86:0.3.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:openblas:jar:linux-x86_64:0.3.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:openblas:jar:linux-armhf:0.3.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:openblas:jar:linux-arm64:0.3.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:openblas:jar:linux-ppc64le:0.3.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:openblas:jar:macosx-x86_64:0.3.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:openblas:jar:windows-x86:0.3.6-1.5.1:compile
+[INFO] |  |  \- org.bytedeco:openblas:jar:windows-x86_64:0.3.6-1.5.1:compile
+[INFO] |  +- org.bytedeco:mkl-platform:jar:2019.4-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:mkl:jar:2019.4-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:mkl:jar:linux-x86:2019.4-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:mkl:jar:linux-x86_64:2019.4-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:mkl:jar:macosx-x86_64:2019.4-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:mkl:jar:windows-x86:2019.4-1.5.1:compile
+[INFO] |  |  \- org.bytedeco:mkl:jar:windows-x86_64:2019.4-1.5.1:compile
+[INFO] |  +- org.bytedeco:mkl-dnn-platform:jar:0.20-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:mkl-dnn:jar:0.20-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:mkl-dnn:jar:linux-x86_64:0.20-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:mkl-dnn:jar:macosx-x86_64:0.20-1.5.1:compile
+[INFO] |  |  \- org.bytedeco:mkl-dnn:jar:windows-x86_64:0.20-1.5.1:compile
+[INFO] |  +- org.nd4j:nd4j-native:jar:1.0.0-beta5:compile
+[INFO] |  |  \- org.nd4j:nd4j-native-api:jar:1.0.0-beta5:compile
+[INFO] |  +- org.nd4j:nd4j-native:jar:android-arm:1.0.0-beta5:compile
+[INFO] |  +- org.nd4j:nd4j-native:jar:android-arm64:1.0.0-beta5:compile
+[INFO] |  +- org.nd4j:nd4j-native:jar:android-x86:1.0.0-beta5:compile
+[INFO] |  +- org.nd4j:nd4j-native:jar:android-x86_64:1.0.0-beta5:compile
+[INFO] |  +- org.nd4j:nd4j-native:jar:ios-arm64:1.0.0-beta5:compile
+[INFO] |  +- org.nd4j:nd4j-native:jar:ios-x86_64:1.0.0-beta5:compile
+[INFO] |  +- org.nd4j:nd4j-native:jar:linux-x86_64:1.0.0-beta5:compile
+[INFO] |  +- org.nd4j:nd4j-native:jar:macosx-x86_64:1.0.0-beta5:compile
+[INFO] |  +- org.nd4j:nd4j-native:jar:windows-x86_64:1.0.0-beta5:compile
+[INFO] |  +- org.nd4j:nd4j-native:jar:linux-ppc64le:1.0.0-beta5:compile
+[INFO] |  \- org.nd4j:nd4j-native:jar:linux-armhf:1.0.0-beta5:compile
+[INFO] +- org.deeplearning4j:deeplearning4j-core:jar:1.0.0-beta5:compile
+[INFO] |  +- org.deeplearning4j:deeplearning4j-tsne:jar:1.0.0-beta5:compile
+[INFO] |  |  \- org.deeplearning4j:nearestneighbor-core:jar:1.0.0-beta5:compile
+[INFO] |  +- org.deeplearning4j:deeplearning4j-datasets:jar:1.0.0-beta5:compile
+[INFO] |  +- org.deeplearning4j:deeplearning4j-datavec-iterators:jar:1.0.0-beta5:compile
+[INFO] |  +- org.deeplearning4j:deeplearning4j-modelimport:jar:1.0.0-beta5:compile
+[INFO] |  |  \- org.bytedeco:hdf5-platform:jar:1.10.5-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:hdf5:jar:1.10.5-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:hdf5:jar:linux-x86:1.10.5-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:hdf5:jar:linux-x86_64:1.10.5-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:hdf5:jar:linux-ppc64le:1.10.5-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:hdf5:jar:macosx-x86_64:1.10.5-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:hdf5:jar:windows-x86:1.10.5-1.5.1:compile
+[INFO] |  |     \- org.bytedeco:hdf5:jar:windows-x86_64:1.10.5-1.5.1:compile
+[INFO] |  +- org.deeplearning4j:deeplearning4j-nn:jar:1.0.0-beta5:compile
+[INFO] |  |  +- org.deeplearning4j:deeplearning4j-utility-iterators:jar:1.0.0-beta5:compile
+[INFO] |  |  |  \- org.deeplearning4j:deeplearning4j-util:jar:1.0.0-beta5:compile
+[INFO] |  |  +- org.lucee:oswego-concurrent:jar:1.3.4:compile
+[INFO] |  |  +- org.nd4j:nd4j-common:jar:1.0.0-beta5:compile
+[INFO] |  |  |  \- org.nd4j:guava:jar:1.0.0-beta5:compile
+[INFO] |  |  +- com.github.oshi:oshi-core:jar:3.4.2:compile
+[INFO] |  |  |  +- net.java.dev.jna:jna-platform:jar:4.3.0:compile
+[INFO] |  |  |  |  \- net.java.dev.jna:jna:jar:4.3.0:compile
+[INFO] |  |  |  \- org.threeten:threetenbp:jar:1.3.3:compile
+[INFO] |  |  \- it.unimi.dsi:fastutil:jar:6.5.7:compile
+[INFO] |  +- org.apache.commons:commons-math3:jar:3.5:compile
+[INFO] |  +- commons-io:commons-io:jar:2.5:compile
+[INFO] |  +- org.apache.commons:commons-compress:jar:1.18:compile
+[INFO] |  +- org.nd4j:nd4j-api:jar:1.0.0-beta5:compile
+[INFO] |  |  +- com.jakewharton.byteunits:byteunits:jar:0.9.1:compile
+[INFO] |  |  +- com.google.flatbuffers:flatbuffers-java:jar:1.10.0:compile
+[INFO] |  |  +- org.nd4j:protobuf:jar:1.0.0-beta5:compile
+[INFO] |  |  +- org.objenesis:objenesis:jar:2.6:compile
+[INFO] |  |  +- commons-net:commons-net:jar:3.1:compile
+[INFO] |  |  +- org.nd4j:nd4j-buffer:jar:1.0.0-beta5:compile
+[INFO] |  |  +- org.nd4j:nd4j-context:jar:1.0.0-beta5:compile
+[INFO] |  |  \- net.ericaro:neoitertools:jar:1.0.0:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.6:compile
+[INFO] |  +- org.nd4j:jackson:jar:1.0.0-beta5:compile
+[INFO] |  +- org.datavec:datavec-api:jar:1.0.0-beta5:compile
+[INFO] |  |  +- commons-codec:commons-codec:jar:1.10:compile
+[INFO] |  |  +- joda-time:joda-time:jar:2.2:compile
+[INFO] |  |  +- org.yaml:snakeyaml:jar:1.12:compile
+[INFO] |  |  +- org.freemarker:freemarker:jar:2.3.23:compile
+[INFO] |  |  +- com.clearspring.analytics:stream:jar:2.7.0:compile
+[INFO] |  |  +- net.sf.opencsv:opencsv:jar:2.3:compile
+[INFO] |  |  \- com.tdunning:t-digest:jar:3.2:compile
+[INFO] |  +- org.datavec:datavec-data-image:jar:1.0.0-beta5:compile
+[INFO] |  |  +- com.github.jai-imageio:jai-imageio-core:jar:1.3.0:compile
+[INFO] |  |  +- com.twelvemonkeys.imageio:imageio-jpeg:jar:3.1.1:compile
+[INFO] |  |  |  +- com.twelvemonkeys.imageio:imageio-core:jar:3.1.1:compile
+[INFO] |  |  |  +- com.twelvemonkeys.imageio:imageio-metadata:jar:3.1.1:compile
+[INFO] |  |  |  +- com.twelvemonkeys.common:common-lang:jar:3.1.1:compile
+[INFO] |  |  |  +- com.twelvemonkeys.common:common-io:jar:3.1.1:compile
+[INFO] |  |  |  \- com.twelvemonkeys.common:common-image:jar:3.1.1:compile
+[INFO] |  |  +- com.twelvemonkeys.imageio:imageio-tiff:jar:3.1.1:compile
+[INFO] |  |  +- com.twelvemonkeys.imageio:imageio-psd:jar:3.1.1:compile
+[INFO] |  |  +- com.twelvemonkeys.imageio:imageio-bmp:jar:3.1.1:compile
+[INFO] |  |  \- org.bytedeco:leptonica-platform:jar:1.78.0-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:leptonica:jar:android-arm:1.78.0-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:leptonica:jar:android-arm64:1.78.0-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:leptonica:jar:android-x86:1.78.0-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:leptonica:jar:android-x86_64:1.78.0-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:leptonica:jar:linux-x86:1.78.0-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:leptonica:jar:linux-x86_64:1.78.0-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:leptonica:jar:linux-armhf:1.78.0-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:leptonica:jar:linux-arm64:1.78.0-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:leptonica:jar:linux-ppc64le:1.78.0-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:leptonica:jar:macosx-x86_64:1.78.0-1.5.1:compile
+[INFO] |  |     +- org.bytedeco:leptonica:jar:windows-x86:1.78.0-1.5.1:compile
+[INFO] |  |     \- org.bytedeco:leptonica:jar:windows-x86_64:1.78.0-1.5.1:compile
+[INFO] |  \- org.deeplearning4j:deeplearning4j-ui-components:jar:1.0.0-beta5:compile
+[INFO] +- org.deeplearning4j:deeplearning4j-ui_2.11:jar:1.0.0-beta5:compile
+[INFO] |  +- org.deeplearning4j:deeplearning4j-play_2.11:jar:1.0.0-beta5:compile
+[INFO] |  |  +- com.google.protobuf:protobuf-java:jar:2.6.1:compile
+[INFO] |  |  +- javax.ws.rs:javax.ws.rs-api:jar:2.0:compile
+[INFO] |  |  +- org.hibernate:hibernate-validator:jar:5.1.3.Final:compile
+[INFO] |  |  |  +- javax.validation:validation-api:jar:1.1.0.Final:compile
+[INFO] |  |  |  +- org.jboss.logging:jboss-logging:jar:3.1.3.GA:compile
+[INFO] |  |  |  \- com.fasterxml:classmate:jar:1.0.0:compile
+[INFO] |  |  +- com.typesafe.play:play-java_2.11:jar:2.7.3:compile
+[INFO] |  |  |  \- com.typesafe.play:play_2.11:jar:2.7.3:compile
+[INFO] |  |  |     +- com.typesafe.play:build-link:jar:2.7.3:compile
+[INFO] |  |  |     |  \- com.typesafe.play:play-exceptions:jar:2.7.3:compile
+[INFO] |  |  |     +- com.typesafe.play:play-streams_2.11:jar:2.7.3:compile
+[INFO] |  |  |     |  +- org.reactivestreams:reactive-streams:jar:1.0.2:compile
+[INFO] |  |  |     |  \- com.typesafe.akka:akka-stream_2.11:jar:2.5.23:compile
+[INFO] |  |  |     |     \- com.typesafe.akka:akka-protobuf_2.11:jar:2.5.23:compile
+[INFO] |  |  |     +- com.typesafe.play:twirl-api_2.11:jar:1.4.2:compile
+[INFO] |  |  |     |  \- org.scala-lang.modules:scala-xml_2.11:jar:1.2.0:compile
+[INFO] |  |  |     +- com.typesafe.akka:akka-slf4j_2.11:jar:2.5.23:compile
+[INFO] |  |  |     +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.8:compile
+[INFO] |  |  |     +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.8:compile
+[INFO] |  |  |     +- com.typesafe.play:play-json_2.11:jar:2.7.4:compile
+[INFO] |  |  |     |  \- com.typesafe.play:play-functional_2.11:jar:2.7.4:compile
+[INFO] |  |  |     +- io.jsonwebtoken:jjwt:jar:0.9.1:compile
+[INFO] |  |  |     +- javax.xml.bind:jaxb-api:jar:2.3.1:compile
+[INFO] |  |  |     |  \- javax.activation:javax.activation-api:jar:1.2.0:compile
+[INFO] |  |  |     +- javax.transaction:jta:jar:1.1:compile
+[INFO] |  |  |     +- javax.inject:javax.inject:jar:1:compile
+[INFO] |  |  |     +- com.typesafe:ssl-config-core_2.11:jar:0.3.8:compile
+[INFO] |  |  |     \- org.scala-lang.modules:scala-parser-combinators_2.11:jar:1.1.2:compile
+[INFO] |  |  +- net.jodah:typetools:jar:0.5.0:compile
+[INFO] |  |  +- com.typesafe.play:play-netty-server_2.11:jar:2.7.3:compile
+[INFO] |  |  |  +- com.typesafe.play:play-server_2.11:jar:2.7.3:compile
+[INFO] |  |  |  +- com.typesafe.netty:netty-reactive-streams-http:jar:2.0.3:compile
+[INFO] |  |  |  |  +- com.typesafe.netty:netty-reactive-streams:jar:2.0.3:compile
+[INFO] |  |  |  |  |  \- io.netty:netty-handler:jar:4.1.34.Final:compile
+[INFO] |  |  |  |  \- io.netty:netty-codec-http:jar:4.1.34.Final:compile
+[INFO] |  |  |  |     \- io.netty:netty-codec:jar:4.1.34.Final:compile
+[INFO] |  |  |  \- io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.34.Final:compile
+[INFO] |  |  |     +- io.netty:netty-common:jar:4.1.34.Final:compile
+[INFO] |  |  |     +- io.netty:netty-buffer:jar:4.1.34.Final:compile
+[INFO] |  |  |     +- io.netty:netty-transport:jar:4.1.34.Final:compile
+[INFO] |  |  |     |  \- io.netty:netty-resolver:jar:4.1.34.Final:compile
+[INFO] |  |  |     \- io.netty:netty-transport-native-unix-common:jar:4.1.34.Final:compile
+[INFO] |  |  +- org.fusesource.leveldbjni:leveldbjni-all:jar:1.8:compile
+[INFO] |  |  +- com.beust:jcommander:jar:1.27:compile
+[INFO] |  |  +- org.slf4j:jul-to-slf4j:jar:1.7.21:compile
+[INFO] |  |  +- org.webjars.npm:babel__polyfill:jar:7.4.4:compile
+[INFO] |  |  |  +- org.webjars.npm:core-js:jar:3.0.0-beta.9:compile (version selected from constraint [2.6.5,3))
+[INFO] |  |  |  \- org.webjars.npm:regenerator-runtime:jar:0.13.3:compile (version selected from constraint [0.13.2,0.14))
+[INFO] |  |  +- org.webjars.npm:coreui__coreui:jar:2.1.9:compile
+[INFO] |  |  +- org.webjars.npm:coreui__icons:jar:0.3.0:compile
+[INFO] |  |  +- org.webjars.npm:jquery:jar:3.4.1:compile
+[INFO] |  |  +- org.webjars.bower:popper.js:jar:1.12.9:compile
+[INFO] |  |  +- org.webjars.npm:bootstrap:jar:4.3.1:compile
+[INFO] |  |  +- org.webjars:jquery:jar:2.2.0:compile
+[INFO] |  |  +- org.webjars:jquery-migrate:jar:1.2.1:compile
+[INFO] |  |  +- org.webjars:jquery-ui:jar:1.10.2:compile
+[INFO] |  |  +- org.webjars:modernizr:jar:2.8.3-1:compile
+[INFO] |  |  +- org.webjars:jquery-cookie:jar:1.4.1-1:compile
+[INFO] |  |  +- org.webjars:fullcalendar:jar:1.6.4:compile
+[INFO] |  |  +- org.webjars:excanvas:jar:3:compile
+[INFO] |  |  +- org.webjars.npm:cytoscape:jar:3.3.3:compile
+[INFO] |  |  |  +- org.webjars.npm:heap:jar:0.2.6:compile (version selected from constraint [0.2.6,0.3))
+[INFO] |  |  |  \- org.webjars.npm:lodash.debounce:jar:4.0.8:compile (version selected from constraint [4.0.8,5))
+[INFO] |  |  +- org.webjars.bower:cytoscape-dagre:jar:2.1.0:compile
+[INFO] |  |  |  +- org.webjars.bower:cytoscape:jar:3.2.5:compile (version selected from constraint [3.2.0,4))
+[INFO] |  |  |  \- org.webjars.bower:dagre:jar:0.7.4:compile (version selected from constraint [0.7.4,0.8))
+[INFO] |  |  |     +- org.webjars.bower:graphlib:jar:1.0.7:compile (version selected from constraint [1.0.5,2))
+[INFO] |  |  |     \- org.webjars.bower:lodash:jar:3.10.1-amd:compile (version selected from constraint [3.10.0,4))
+[INFO] |  |  +- org.webjars.npm:dagre:jar:0.8.4:compile
+[INFO] |  |  |  +- org.webjars.npm:graphlib:jar:2.1.7:compile (version selected from constraint [2.1.7,3))
+[INFO] |  |  |  \- org.webjars.npm:lodash:jar:4.17.15:compile (version selected from constraint [4.17.4,5))
+[INFO] |  |  +- org.webjars.npm:cytoscape-cola:jar:2.3.0:compile
+[INFO] |  |  |  \- org.webjars.npm:webcola:jar:3.3.8:compile (version selected from constraint [3.3.6,4))
+[INFO] |  |  |     +- org.webjars.npm:d3-dispatch:jar:1.0.5:compile (version selected from constraint [1.0.3,2))
+[INFO] |  |  |     +- org.webjars.npm:d3-drag:jar:1.2.4:compile (version selected from constraint [1.0.4,2))
+[INFO] |  |  |     |  \- org.webjars.npm:d3-selection:jar:2.0.0-rc.1:compile (version selected from constraint [1,2))
+[INFO] |  |  |     \- org.webjars.npm:d3-timer:jar:1.0.9:compile (version selected from constraint [1.0.5,2))
+[INFO] |  |  +- org.webjars.npm:cytoscape-cose-bilkent:jar:4.0.0:compile
+[INFO] |  |  +- org.webjars.npm:cytoscape-euler:jar:1.2.1:compile
+[INFO] |  |  +- org.webjars.npm:cytoscape-klay:jar:3.1.2:compile
+[INFO] |  |  +- org.webjars.npm:klayjs:jar:0.4.1:compile
+[INFO] |  |  +- org.webjars.npm:cytoscape-spread:jar:3.0.0:compile
+[INFO] |  |  +- org.webjars.npm:weaverjs:jar:1.2.0:compile
+[INFO] |  |  +- org.webjars:retinajs:jar:0.0.2:compile
+[INFO] |  |  +- org.webjars:flot:jar:0.8.3:compile
+[INFO] |  |  |  \- org.webjars:explorercanvas:jar:r3-1:compile
+[INFO] |  |  +- org.webjars:chosen:jar:0.9.8:compile
+[INFO] |  |  +- org.webjars:uniform:jar:2.1.2-1:compile
+[INFO] |  |  +- org.webjars:noty:jar:2.2.2:compile
+[INFO] |  |  +- org.webjars:jquery-raty:jar:2.5.2:compile
+[INFO] |  |  +- org.webjars:imagesloaded:jar:2.1.1:compile
+[INFO] |  |  +- org.webjars:masonry:jar:3.1.5:compile
+[INFO] |  |  +- org.webjars:jquery.sparkline:jar:2.1.2:compile
+[INFO] |  |  +- org.webjars:jquery-knob:jar:1.2.2:compile
+[INFO] |  |  +- org.webjars:datatables:jar:1.9.4:compile
+[INFO] |  |  +- org.webjars:jquery-ui-touch-punch:jar:0.2.2:compile
+[INFO] |  |  +- org.webjars:d3js:jar:3.3.5:compile
+[INFO] |  |  +- org.webjars:bootstrap-notify:jar:3.1.3-1:compile
+[INFO] |  |  +- org.webjars.npm:github-com-jboesch-Gritter:jar:1.7.4:compile
+[INFO] |  |  +- org.webjars.bowergithub.stenin-nikita:open-sans:jar:0.1.3:compile
+[INFO] |  |  +- org.webjars:font-awesome:jar:3.0.2:compile
+[INFO] |  |  |  \- org.webjars:bootstrap:jar:2.2.2-1:compile
+[INFO] |  |  +- org.webjars:bootstrap-glyphicons:jar:bdd2cbfba0:compile
+[INFO] |  |  \- org.webjars.npm:flatbuffers:jar:1.9.0:compile
+[INFO] |  +- org.deeplearning4j:deeplearning4j-nlp:jar:1.0.0-beta5:compile
+[INFO] |  |  +- commons-lang:commons-lang:jar:2.6:compile
+[INFO] |  |  +- org.threadly:threadly:jar:4.10.0:compile
+[INFO] |  |  \- com.github.vinhkhuc:jfasttext:jar:0.4:compile
+[INFO] |  +- org.nd4j:nd4j-jackson:jar:1.0.0-beta5:compile
+[INFO] |  \- org.deeplearning4j:deeplearning4j-ui-model:jar:1.0.0-beta5:compile
+[INFO] |     +- org.agrona:Agrona:jar:0.5.4:compile
+[INFO] |     +- org.mapdb:mapdb:jar:3.0.5:compile
+[INFO] |     |  +- org.jetbrains.kotlin:kotlin-stdlib:jar:1.0.7:compile
+[INFO] |     |  |  \- org.jetbrains.kotlin:kotlin-runtime:jar:1.0.7:compile
+[INFO] |     |  +- org.eclipse.collections:eclipse-collections-api:jar:7.1.2:compile (version selected from constraint [7.0.0,7.20.0))
+[INFO] |     |  |  \- net.jcip:jcip-annotations:jar:1.0:compile
+[INFO] |     |  +- org.eclipse.collections:eclipse-collections:jar:7.1.2:compile (version selected from constraint [7.0.0,7.20.0))
+[INFO] |     |  +- org.eclipse.collections:eclipse-collections-forkjoin:jar:7.1.2:compile (version selected from constraint [7.0.0,7.20.0))
+[INFO] |     |  +- com.google.guava:guava:jar:19.0:compile (version selected from constraint [15.0,19.20))
+[INFO] |     |  +- net.jpountz.lz4:lz4:jar:1.3.0:compile
+[INFO] |     |  \- org.mapdb:elsa:jar:3.0.0-M5:compile
+[INFO] |     \- org.xerial:sqlite-jdbc:jar:3.15.1:compile
+[INFO] +- org.deeplearning4j:deeplearning4j-zoo:jar:1.0.0-beta5:compile
+[INFO] |  \- org.deeplearning4j:deeplearning4j-common:jar:1.0.0-beta5:compile
+[INFO] +- org.deeplearning4j:rl4j-core:jar:1.0.0-beta5:compile
+[INFO] |  +- org.deeplearning4j:gym-java-client:jar:1.0.0-beta5:compile
+[INFO] |  |  +- org.apache.httpcomponents:httpclient:jar:4.5.3:compile
+[INFO] |  |  |  \- commons-logging:commons-logging:jar:1.2:compile
+[INFO] |  |  +- org.apache.httpcomponents:httpcore:jar:4.4.6:compile
+[INFO] |  |  +- org.apache.httpcomponents:httpmime:jar:4.5.3:compile
+[INFO] |  |  +- com.mashape.unirest:unirest-java:jar:1.4.9:compile
+[INFO] |  |  |  +- org.apache.httpcomponents:httpasyncclient:jar:4.1.1:compile
+[INFO] |  |  |  |  \- org.apache.httpcomponents:httpcore-nio:jar:4.4.4:compile
+[INFO] |  |  |  \- org.json:json:jar:20160212:compile
+[INFO] |  |  \- org.ow2.asm:asm:jar:5.1:compile
+[INFO] |  +- org.bytedeco:javacv:jar:1.5.1:compile
+[INFO] |  |  +- org.bytedeco:flycapture:jar:2.13.3.31-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:libdc1394:jar:2.2.6-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:libfreenect:jar:0.5.7-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:libfreenect2:jar:0.2.0-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:librealsense:jar:1.12.1-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:videoinput:jar:0.200-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:artoolkitplus:jar:2.3.1-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:flandmark:jar:1.07-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:leptonica:jar:1.78.0-1.5.1:compile
+[INFO] |  |  \- org.bytedeco:tesseract:jar:4.1.0-1.5.1:compile
+[INFO] |  +- org.bytedeco:javacpp:jar:1.5.1-1:compile
+[INFO] |  +- org.bytedeco:opencv:jar:4.1.0-1.5.1:compile
+[INFO] |  +- org.bytedeco:opencv-platform:jar:4.1.0-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:opencv:jar:android-arm:4.1.0-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:opencv:jar:android-arm64:4.1.0-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:opencv:jar:android-x86:4.1.0-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:opencv:jar:android-x86_64:4.1.0-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:opencv:jar:ios-arm64:4.1.0-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:opencv:jar:ios-x86_64:4.1.0-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:opencv:jar:linux-x86:4.1.0-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:opencv:jar:linux-x86_64:4.1.0-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:opencv:jar:linux-armhf:4.1.0-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:opencv:jar:linux-arm64:4.1.0-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:opencv:jar:linux-ppc64le:4.1.0-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:opencv:jar:macosx-x86_64:4.1.0-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:opencv:jar:windows-x86:4.1.0-1.5.1:compile
+[INFO] |  |  \- org.bytedeco:opencv:jar:windows-x86_64:4.1.0-1.5.1:compile
+[INFO] |  +- org.bytedeco:ffmpeg:jar:4.1.3-1.5.1:compile
+[INFO] |  +- org.bytedeco:ffmpeg-platform:jar:4.1.3-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:ffmpeg:jar:android-arm:4.1.3-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:ffmpeg:jar:android-arm64:4.1.3-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:ffmpeg:jar:android-x86:4.1.3-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:ffmpeg:jar:android-x86_64:4.1.3-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:ffmpeg:jar:linux-x86:4.1.3-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:ffmpeg:jar:linux-x86_64:4.1.3-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:ffmpeg:jar:linux-armhf:4.1.3-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:ffmpeg:jar:linux-arm64:4.1.3-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:ffmpeg:jar:linux-ppc64le:4.1.3-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:ffmpeg:jar:macosx-x86_64:4.1.3-1.5.1:compile
+[INFO] |  |  +- org.bytedeco:ffmpeg:jar:windows-x86:4.1.3-1.5.1:compile
+[INFO] |  |  \- org.bytedeco:ffmpeg:jar:windows-x86_64:4.1.3-1.5.1:compile
+[INFO] |  +- org.deeplearning4j:rl4j-api:jar:1.0.0-beta5:compile
+[INFO] |  +- org.apache.commons:commons-collections4:jar:4.1:compile
+[INFO] |  \- com.google.code.gson:gson:jar:2.8.0:compile
+[INFO] +- org.deeplearning4j:rl4j-ale:jar:1.0.0-beta5:compile
+[INFO] |  \- org.bytedeco:ale:jar:0.6.0-1.5.1:compile
+[INFO] +- org.deeplearning4j:rl4j-gym:jar:1.0.0-beta5:compile
+[INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.5.1:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.5.0:compile
+[INFO] |  \- com.fasterxml.jackson.core:jackson-core:jar:2.5.1:compile
+[INFO] +- jfree:jfreechart:jar:1.0.13:compile
+[INFO] |  \- jfree:jcommon:jar:1.0.16:compile
+[INFO] +- com.typesafe.akka:akka-actor_2.11:jar:2.5.24:compile
+[INFO] |  +- org.scala-lang:scala-library:jar:2.11.12:compile
+[INFO] |  +- com.typesafe:config:jar:1.3.3:compile
+[INFO] |  \- org.scala-lang.modules:scala-java8-compat_2.11:jar:0.7.0:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.8.0-beta2:compile
+[INFO] +- ch.qos.logback:logback-classic:jar:1.3.0-alpha4:compile
+[INFO] |  +- ch.qos.logback:logback-core:jar:1.3.0-alpha4:compile
+[INFO] |  \- com.sun.mail:javax.mail:jar:1.6.0:runtime
+[INFO] |     \- javax.activation:activation:jar:1.1:runtime
+[INFO] \- com.typesafe.scala-logging:scala-logging_2.11:jar:3.9.0:compile
+[INFO]    \- org.scala-lang:scala-reflect:jar:2.11.12:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.930 s
+[INFO] Finished at: 2019-11-02T22:25:00+08:00
+[INFO] ------------------------------------------------------------------------

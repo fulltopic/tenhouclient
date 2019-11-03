@@ -1,3 +1,5 @@
+package tenhouclient.test
+
 import org.nd4j.linalg.api.ndarray.INDArray
 import tenhouclient.impl.MessageParseUtilsImpl
 import tenhouclient.impl.mdp.TenhouEncodableMdp
