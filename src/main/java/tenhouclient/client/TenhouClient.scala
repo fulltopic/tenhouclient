@@ -7,19 +7,31 @@ import akka.actor.{Actor, ActorRef, Props}
 import akka.event.slf4j.Logger
 import tenhouclient.conn.TenhouTcpConnection
 import tenhouclient.conn.msgs.{ActionRequest, ConnMsgs, ConnReady}
-import tenhouclient.config.ClientSettings
+import tenhouclient.config.{ClientConfig, ClientSettings}
 import tenhouclient.utils.MessageParseUtils
 import tenhouclient.conn.msgs.ConnMsgs._
 
 import scala.concurrent.duration.Duration
 
-class TenhouClient(val index: Int = 0, val msgHelper: MsgHelper, val isPrivateLobby: Boolean = false) extends Actor{
+//class TenhouClient(val index: Int = 0, val msgHelper: MsgHelper, val isPrivateLobby: Boolean = false) extends Actor{
+class TenhouClient(val index: Int, val clientConfig: ClientConfig, val msgHelper: MsgHelper) extends Actor{
+
+//    private[this] val log = Logger("TenhouClient" + index)
+//
+//  val userName: String = ClientSettings.UserName
+//  val serverIp: String = ClientSettings.ServerIP
+//  val port: Int = ClientSettings.ServerPort
+//  val lnLimit: Int = ClientSettings.LNLimit
+
   private[this] val log = Logger("TenhouClient" + index)
 
-  val userName: String = ClientSettings.UserName
-  val serverIp: String = ClientSettings.ServerIP
-  val port: Int = ClientSettings.ServerPort
-  val lnLimit: Int = ClientSettings.LNLimit
+  val userName: String = clientConfig.userName(index)
+  val serverIp: String = clientConfig.serverIp()
+  val port: Int = clientConfig.serverPort()
+  val lnLimit: Int = clientConfig.lnLimit()
+  val isPrivateLobby: Boolean = clientConfig.isPrivateLobby()
+//  val index: Int = clientConfig.index()
+  log.info("-------------------------------> Client " + userName + ", " + serverIp + ", " + port)
 
   var reachDropTile: Int = -1
 
